@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Voting Eligibility</title>
+</head>
+<body>
+
+    <label for="">Check Voting Eligibility</label> <br>
+    <input type="number"id="age"><br> <br>
+
+    <input type="button" value="check Voting Eligibility" onclick="click()"><br> <br>
+
+    <samp for="" id="result"></samp>
+
+
+    <script>
+        function click(){
+
+
+
+            let age = parseInt(document.getElementById("age").value);
+
+
+            if(age>=18){
+
+                document.getElementById("result").innerHTML= age + "You Are Eligible For Voting";
+
+
+
+            }
+            else{
+
+                document.getElementById("result").innerHTML = age + "You Are not Eligible For Voting";
+
+
+
+            }
+        }
+
+
+
+
+    </script>
+    
+</body>
+</html>

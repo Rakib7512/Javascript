@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade point</title>
+</head>
+
+<body>
+
+
+    <label for="">Grade Point check</label> <br>
+    <input type="text" id="number"><br> <br>
+    <input type="button" value="check Grade" onclick="check()"> <br>
+    <label for="" id="result"></label>
+
+    
+    <script>
+        function check() {
+
+            let number = parseInt(document.getElementById("number").value);
+
+            if (number <= 100 && number >=90) {
+                document.getElementById("result").innerHTML = number + "Grade A";
+
+            }
+            else if (number <= 89 && number >=80) {
+                document.getElementById("result").innerHTML = number + "Grade B";
+            }
+            else if (number <= 79 && number >=70) {
+                document.getElementById("result").innerHTML =  number + "Grade C";
+            }
+            else if (number <= 69 && number >=60) {
+                document.getElementById("result").innerHTML =  number + "Gread D";
+            }
+            else {
+                document.getElementById("result").innerHTML =  number + "Fail F";
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
