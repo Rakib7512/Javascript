@@ -15,17 +15,17 @@
 
     <script>
         function sum(){
-            let = parseInt(document.getElementById("agenumber").value);
+            let agenumber = parseInt(document.getElementById("agenumber").value);
 
 
 
-            if(dive%5==0 && dive%11==0){
-                document.write("result").innerHTML= agenumber +"is Divisibled By Both 5 And 11";
+            if(agenumber%5==0 && agenumber%11==0){
+                document.getElementById("result").innerHTML= agenumber + "is Divisibled By Both 5 And 11";
 
             }
             else{
 
-                document.write("result").innerHTML= agenumber+"is not Divisibled By Both 5 And 11";
+                document.getElementById("result").innerHTML= agenumber+ "is not Divisibled By Both 5 And 11";
             }
 
 
