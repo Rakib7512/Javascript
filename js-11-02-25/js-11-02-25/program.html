@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let names = ["Eiasin", "Parvej", "Rakib"];
+      let passwords = ["12", "13", "14"];
+      let username = prompt("Enter user name").toLowerCase();
+
+      for (let i = 0; i < names.length; i++) {
+        if (username == names[i].toLocaleLowerCase()) {
+          let index = i;
+          let password = prompt("Enter Your passdord");
+
+          if (password == passwords[index]) {
+            document.write("welcome " + username);
+          } else {
+            document.write("Password incorrect");
+          }
+
+          break;
+
+          if (i == names.length - 1) {
+            document.write("User name is incorrect");
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
