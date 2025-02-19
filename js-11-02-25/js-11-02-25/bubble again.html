@@ -7,18 +7,16 @@
   </head>
   <body>
     <script>
-      let n = [12, 40, 24, 15, 42, 10, 22];
-
+      let n = [5, 10, 1, 1, 4, 2, 6, 5, 1, 2, 54, 1, 35];
       for (let i = 0; i < n.length - 1; i++) {
         for (let j = 0; j < n.length - 1 - i; j++) {
-          if (n[j] < n[j + 1]) {
+          if (n[j] > n[j + 1]) {
             let temp = n[j];
             n[j] = n[j + 1];
             n[j + 1] = temp;
           }
         }
       }
-
       document.write(n + "<br>");
     </script>
   </body>

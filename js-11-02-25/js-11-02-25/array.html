@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let input = parseInt(prompt("Enter size"));
+      let sum = 0;
+      let array = [];
+      for (let i = 0; i < input; i++) {
+        let pormtN = parseInt("Enter value" + i++);
+        sum += pormtN;
+        array[i] = pormtN;
+      }
+      document.write(sum);
+    </script>
+  </body>
+</html>
