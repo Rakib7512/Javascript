@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Email validation</title>
   </head>
   <body>
     <label for="">Email</label><br />
@@ -14,18 +14,14 @@
     <script>
       function check(){
         let email = document.getElementById("email").value;
-        let pattern = /^\S+@\S+$/;
+        let pattern =/^\S+@\S+$/;
 
         if (pattern.test(email)) {
-          document.getElementById("message").innerHTML =
-            "<span style='color:green;'>Email is Valid</span><br>";
+          document.getElementById("message").innerHTML ="<span style='color:green;'>Email is Valid</span><br>";
         } else {
-          document.getElementById("message").innerHTML =
-            "<span style='color:red;'>Email is Valid</span><br>";
+          document.getElementById("message").innerHTML ="<span style='color:red;'>Email is Valid</span><br>";
         }
       }
-
-      function
     </script>
   </body>
 </html>
