@@ -12,19 +12,20 @@ let course=document.querySelectorAll('input[name="course"]:checked');
 
 
 let location=document.getElementById("location").value;
+
 let subjectives=[];
 
-for(let i=0; i<subjectives.length;i++){
-    subjectives.push(subjectives[i].value);
+for(let i=0; i<course.length;i++){
+    subjectives.push(course[i].value);
 }
 
 let outPut= "Name"+uName+"<br>"
 + "Contact  "+contact+"<br>"
 + "Remarks  "+remarks+"<br>"
 + "sex "+sex.value+"<br>"
-+ "course "+course+"<br>"
-+ "location "+location+"<br>"
-+ "Contact "+contact+"<br>"
++ "course "+ subjectives +"<br>"
++ "location "+location;
+
 let newWindow=window.open("","blank");
 newWindow.document.write(outPut);
 }
